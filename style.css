@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap');
+.img-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-blue {
+  background-color: rgb(160, 216, 216);
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  top: 50px;
+  height: 100%;
+}
+.side {
+  position: sticky;
+}
+.card-white {
+  background-color: rgb(232, 237, 237);
+  border-radius: 15px;
+  padding: 20px;
+  overflow-y: scroll;
+  height: calc(100vh - 50px);
+  height: calc(100dvh - 50px);
+}
+
+.list-inline li{
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 30px;
+  /* color: rgb(70, 65, 65) */
+}
