@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -53,87 +52,112 @@
 
     </div>
   </section>
+  <!-- <section class="skills">
+    <div class="max-width">
+      <div class="container" id="skills">
+        <h1 class="title">My skills</h1>
 
-  <!-- <div class="container-fluid pt-5">
-    <div class="row">
-      <div class="col-sm-4 col-lg-4">
-        <div class="card-blue">
-          <p><strong>Full-Stack Developer in training | Fluent in EN / JP / CN</strong></p>
-          <p>Currently studying at Le Wagon Web Development Bootcamp</p>
-          <ul class="list-inline">
-            <li><a href="https://www.linkedin.com/in/jiahui-c-5b35882b7/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/kaechen413" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-          </ul>
-        </div>
+        <div class="technical-bars">
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/officel/100/html.png" alt="html"/></div>
+            <div class="col-right"><div class="progress-line html"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/officel/100/css.png" alt="css"/></div>
+            <div class="col-right"><div class="progress-line css"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/color/100/sql.png" alt="sql"/></div>
+            <div class="col-right"><div class="progress-line sql"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/color/100/bootstrap.png" alt="bootstrap"/></div>
+            <div class="col-right"><div class="progress-line bootstrap"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/dusk/100/javascript.png" alt="javascript"/></div>
+            <div class="col-right"><div class="progress-line js"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/plasticine/100/ruby-programming-language.png" alt="ruby-programming-language"/></div>
+            <div class="col-right"><div class="progress-line ruby"><span></span></div></div>
+          </div>
+          <div class="bar">
+            <div class="col-left"><img width="50" height="50" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-rails-a-server-side-web-application-framework-written-in-ruby-logo-color-tal-revivo.png" alt="external-rails-a-server-side-web-application-framework-written-in-ruby-logo-color-tal-revivo"/></div>
+            <div class="col-right"><div class="progress-line ruby-on-rails"><span></span></div></div>
+          </div>
       </div>
-      <div class="col-sm-8 col-lg-8">
-          <div class="card-white">
-            <h3>Work Experience</h3>
-            <h5>Prompt Engineer (Aug 2024 - Present)</h5>
-            <ul>
-              <li>Reviewed GenAI-generated Java code and COBOL programs.</li>
-              <li>Designed scalable project structures for Java modernization.</li>
-            </ul>
+    </div>
+    </div>
+  </section> -->
 
-            <h5>Application Consultant (Apr 2023 - Jul 2024)</h5>
-            <ul>
-              <li>Improved project documentation and test planning.</li>
-              <li>Led root cause analysis using NLP tools on delayed projects.</li>
-              <li>Automated Slack-based internal workflows using Node.js.</li>
-            </ul>
+  <section class="skills">
+    <div id="axis">
+      <div class="x-line"></div>
+      <div class="y-line"></div>
+    </div>
 
-            <h5>Training Program - Web Dev Sprint (Mar 2023)</h5>
-            <ul>
-              <li>Built a responsive website with a team of 5 in 2 weeks.</li>
-              <li>Implemented UI using HTML and Bootstrap.</li>
-            </ul>
-          </div>
+    <!-- Skill avatars: replace src with real icons -->
+    <div class="skill" data-x="180" data-y="-190">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML" />
+      <span class="skill-label">HTML</span>
+    </div>
+    <div class="skill" data-x="160" data-y="-120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS" />
+      <span class="skill-label">CSS</span>
+    </div>
+    <div class="skill" data-x="100" data-y="-100">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JS" />
+      <span class="skill-label">JavaScript</span>
+    </div>
+    <div class="skill" data-x="120" data-y="120">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python" />
+      <span class="skill-label">Python</span>
+    </div>
+    <div class="skill" data-x="-90" data-y="160">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon" alt="Java" />
+      <span class="skill-label">Java</span>
+    </div>
+    <div class="skill" data-x="-60" data-y="70">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" data-x="-20" data-y="20" alt="Node.js" />
+      <span class="skill-label">Node.js</span>
+    </div>
+    <div class="skill" data-x="70" data-y="-20">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" data-x="20" data-y="20" alt="React.js" />
+      <span class="skill-label">React.js</span>
+    </div>
+    <div class="skill" data-x="20" data-y="-40">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" class="skill-icon" data-x="50" data-y="30" alt="Vue.js" />
+      <span class="skill-label">Vue.js</span>
+    </div>
+    <div class="skill" data-x="28" data-y="-100">
+      <img src="https://www.tomoyan.net/_media/javascript/chartjs-logo.svg" class="skill-icon" data-x="0" data-y="0" alt="Chart.js" />
+      <span class="skill-label">Chart.js</span>
+    </div>
+    <div class="skill" data-x="-120" data-y="-130">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="skill-icon" data-x="80" data-y="-70" alt="AWS" />
+      <span class="skill-label">AWS Cloud</span>
+    </div>
+    <div class="skill" data-x="-90" data-y="-50">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" class="skill-icon" data-x="80" data-y="-70" alt="Azure" />
+      <span class="skill-label">Azure Cloud</span>
+    </div>
+    <div class="skill" data-x="200" data-y="200">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain.svg" class="skill-icon" data-x="80" data-y="-70" alt="PostgreSQL" />
+      <span class="skill-label">PostgreSQL</span>
+    </div>
+    <div class="skill" data-x="-160" data-y="160">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-plain.svg" class="skill-icon" alt="Ruby">
+      <span class="skill-label">Ruby</span>
+    </div>
+    <div class="skill" data-x="-160" data-y="230">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rails/rails-plain-wordmark.svg" class="skill-icon" alt="Rails" />
+      <span class="skill-label">Ruby on Rails</span>
+    </div>
+  </section>
 
-
-
-          <div class="card-white">
-            <h3>Education</h3>
-            <h5><strong>Le Wagon</strong> - Web Development</h5>
-            <em>04/2025 - 06/2025</em>
-            <ul>
-              <li>9-week full-time intensive coding Bootcamp</li>
-              <li>Learned HTML, CSS, Bootstrap, JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails.</li>
-              <li>Designed, implemented and shipped to production a clone of AirBnB</li>
-              <li>Shipped a prototype of [Project] app in a team of 4 in 2 weeks. Used…. . Coordinated… .Planning to implement …. .</li>
-            </ul>
-            <h5><strong>Keio University</strong> - Master of Economics</h5>
-            <em>04/2021 - 03/2023</em>
-            <h5><strong>Jiangxi Normal University</strong> - Bachelor of Finance</h5>
-            <em>07/2015 - 06/2019</em>
-          </div>
-
-
-
-          <div class="card-white">
-            <h3>Skills</h3>
-            <ul>
-              <li><strong>Languages:</strong> HTML, CSS, JS, Ruby, SQL</li>
-              <li><strong>Frameworks:</strong> React (in progress), Node.js, Ruby on Rails</li>
-              <li><strong>Tools:</strong> Git, GitHub, VS Code</li>
-              <li><strong>Cloud:</strong> AWS (SAA), Azure (Fundamentals)</li>
-              <li><strong>Data & AI:</strong> Python (basic), Pandas, IBM Watson</li>
-              <li><strong>Languages:</strong> Japanese (JLPT N1), English (TOEFL 101), Chinese (native)</li>
-            </ul>
-          </div>
-
-          <div class="card-white">
-            <h3>Certifications</h3>
-            <ul>
-              <li>AWS Certified Solutions Architect - Associate (May 2024)</li>
-              <li>IBM Data Science Professional Certificate (Dec 2024)</li>
-              <li>Oracle Java Programmer Bronze SE (Feb 2024)</li>
-              <li>Azure AI / Data / Cloud Fundamentals (2023-2024)</li>
-              <li>TOEIC 920 / TOEFL 101 / JLPT N1</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <script src="script.js"></script>
+  <script src="js/icon-animation.js" defer></script>
+  <script src="js/sticky-navbar.js" defer></script>
+  <script src="js/menu-toggle.js" defer></script>
 </body>
 </html>

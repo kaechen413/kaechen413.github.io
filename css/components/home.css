@@ -1,0 +1,58 @@
+.home {
+  display: flex;
+  background: url('../../images/banner.png') no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+  font-size: 27px;
+}
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+  color: #b23b20;
+  font-weight: 500;
+}
+.img-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+section {
+  padding: 100px 0;
+  background: #C9D9E4;
+  width: 100vw;
+}
+.about {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}

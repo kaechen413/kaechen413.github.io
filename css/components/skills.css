@@ -1,0 +1,84 @@
+.skills .title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.technical-bars {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.technical-bars .bar {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.technical-bars .bar:first-child {
+  margin-top: 0;
+}
+
+.technical-bars .bar:last-child {
+  margin-bottom: 0;
+}
+
+.technical-bars .bar .col-left {
+  width: 20%;
+}
+
+.technical-bars .bar .col-right {
+  width: 80%;
+}
+
+ .progress-line {
+  position: relative;
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line span {
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #B23C20;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+.progress-line.css span {
+  width: 85%;
+}
+.progress-line.js span {
+  width: 80%;
+}
+.progress-line.sql span {
+  width: 80%;
+}
+.progress-line.bootstrap span {
+  width: 75%;
+}
+.progress-line.ruby span {
+  width: 75%;
+}
+.progress-line.ruby-on-rails span {
+  width: 70%;
+}
