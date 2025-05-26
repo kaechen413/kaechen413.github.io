@@ -1,26 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const section = document.querySelector('.skills');
-  if (!section) return;
-
   const skills = document.querySelectorAll('.skill');
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          skills.forEach(skill => {
-            const dx = parseInt(skill.dataset.x);
-            const dy = parseInt(skill.dataset.y);
-            skill.classList.add("visible");
-            skill.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
-          });
-        }, 600);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.3
-  });
+  skills.forEach(skill => {
+    const angle = parseFloat(skill.dataset.angle);
+    const radius = parseFloat(skill.dataset.radius);
+    const radians = angle * (Math.PI / 180);
 
-  observer.observe(section);
+    const x = Math.cos(radians) * radius;
+    const y = Math.sin(radians) * radius;
+
+    skill.style.left = `calc(50% + ${x}px)`;
+    skill.style.top = `calc(50% + ${y}px)`;
+  });
 });
+const section = document.querySelector('.orbit-container');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.skill').forEach(skill => {
+        skill.classList.add('visible');
+      });
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+observer.observe(section);

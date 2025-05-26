@@ -1,49 +1,50 @@
-
-.skills {
+.orbit-container {
   position: relative;
-  height: 600px;
-  background: #f9f9f9;
-  overflow: hidden;
-}
-
-/* Axis */
-#axis {
-  position: absolute;
   width: 100%;
   height: 100%;
+  margin-left: 20px;
 }
 
-#axis .x-line,
-#axis .y-line {
+
+.orbit-ring {
   position: absolute;
-  background: #B23B20;
-}
-
-#axis .x-line {
   top: 50%;
-  left: 15%;
-  width: 70%;
-  height: 2px;
+  left: 50%;
+  border: 1px dashed #aaa;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.orbit-ring-1 {
+  width: 100px;
+  height: 80px;
 }
 
-#axis .y-line {
-  left: 50%;
-  top: 15%;
-  width: 2px;
-  height: 70%;
+.orbit-ring-2 {
+  width: 200px;
+  height: 160px;
+}
+.orbit-ring-3 {
+  width: 300px;
+  height: 240px;
+}
+.orbit-ring-4 {
+  width: 400px;
+  height: 320px;
+}
+.orbit-ring-5 {
+  width: 500px;
+  height: 400px;
 }
 
 
 .skill {
   position: absolute;
-  top: 61%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
   opacity: 0;
   transition: all 0.6s ease;
-  text-align: center;
-  font-weight: bold;
-  color: #333;
 }
 
 .skill.visible {
@@ -51,14 +52,12 @@
 }
 
 .skill-icon {
-  width: 40px;
-  height: 40px;
-  display: block;
-  margin: 0 auto;
+  width: 48px;
+  height: 48px;
 }
 
 .skill-label {
   display: block;
-  margin-top: 8px;
-  font-size: 14px;
+  margin-top: 6px;
+  font-weight: bold;
 }
