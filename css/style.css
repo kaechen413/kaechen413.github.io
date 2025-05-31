@@ -20,30 +20,46 @@
   }
 }
 @media (max-width: 947px) {
-  .navbar-container .max-width {
-    padding: 5px !important;
-    margin: 0 !important;
+  html, body {
     width: 100vw !important;
     max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
   }
-
+  .max-width {
+    padding: 0 18px !important;
+  }
+  .home,
+  .about,
+  .skills,
+  .projects,
+  .education,
+  .experience,
+  .contact {
+    max-width: 100vw !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+  }
   .menu-btn {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 2000;
     display: block;
-    z-index: 1000;
-  }
-
-  .menu-btn i.active:before {
-      content: "\f00d";
   }
   .navbar-container .menu {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     left: -100vw;
     top: 0;
     background: #C9D9E4;
     text-align: center;
-    padding: 0 !important;
+    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
     margin: 0 !important;
     padding-left: 0 !important;
     display: flex;
@@ -53,12 +69,15 @@
     transition: all 0.3s ease;
     z-index: 999;
     list-style: none;
+    box-sizing: border-box;
   }
 
-  .navbar-container .menu.active{
+  .menu-btn i.active:before {
+      content: "\f00d";
+  }
+  .navbar-container .menu.active {
     left: 0;
   }
-
   .navbar-container .menu li {
     display: block;
     margin: 20px 0;
@@ -70,7 +89,8 @@
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 768px) {
+  
   .home {
     background: #C9D9E4;
     background-image: none;
