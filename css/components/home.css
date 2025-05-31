@@ -11,7 +11,7 @@
 }
 
 .home .max-width {
-  margin: auto 0 auto 40px;
+  margin: 0;
 }
 
 .home .home-content .text-1{
@@ -38,21 +38,8 @@
   object-fit: cover;
 }
 
-section {
+section .home  {
   padding: 100px 0;
   background: #C9D9E4;
   width: 100vw;
-}
-.about {
-  font-family: 'Poppins', sans-serif;
-}
-
-.about .title {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  position: relative;
 }

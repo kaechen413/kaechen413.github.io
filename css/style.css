@@ -3,22 +3,19 @@
 @import url('./components/home.css');
 @import url('./components/about.css');
 @import url('./components/skills.css');
-@import url('./components/skill-icons.css');
+@import url('./components/orbit.css');
 .max-width {
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+    width: 100%;
+    max-width: none;
+    padding: 0 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 
-
-
-@media (max-width: 1104px) {
-  .home .max-width {
-    margin-left: 0;
-  }
-}
 @media (max-width: 947px) {
   html, body {
     width: 100vw !important;

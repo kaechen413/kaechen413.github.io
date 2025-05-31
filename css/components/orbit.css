@@ -1,0 +1,62 @@
+.orbit-container {
+  position: relative;
+  width: 90vw;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.orbit-wrapper {
+  max-height: 400px;
+  width: 100%;
+}
+
+.orbit-ring {
+  position: absolute;
+  border: 1px dashed #aaa;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.orbit-ring-1 { width: 50%; height: 20%;}
+.orbit-ring-2 { width: 100%; height: 40%;}
+.orbit-ring-3 { width: 150%; height: 60%;}
+.orbit-ring-4 { width: 200%; height: 80%;}
+.orbit-ring-5 { width: 250%; height: 100%;}
+
+
+.skill {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.skill-label {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .orbit-container {
+    max-width: 260px;
+  }
+  .skill-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .skill-label {
+  display: block;
+  margin-top: 4px;
+}
+}
