@@ -1,3 +1,8 @@
+#skills {
+  font-family: 'Poppins', sans-serif;
+  background: #f2f8fc;
+}
+
 .skills .title {
   font-family: 'Ubuntu', sans-serif;
   font-size: 40px;
@@ -8,6 +13,30 @@
   position: relative;
 }
 
+.skills .title::before {
+  content: '';
+  display: block;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: #b23b20;
+  margin: auto;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.skills .title::after {
+  content: 'what i know';
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: #b23b20;
+  background-color: #eff6fa;
+  padding: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+}
 .technical-bars {
   width: 100%;
   margin-right: 10px;

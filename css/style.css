@@ -4,6 +4,7 @@
 @import url('./components/about.css');
 @import url('./components/skills.css');
 @import url('./components/orbit.css');
+@import url('./components/projects.css');
 .max-width {
     width: 100%;
     max-width: none;

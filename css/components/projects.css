@@ -1,0 +1,27 @@
+#projects {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfeff;
+}
+
+.projects .title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.projects .title::before {
+  content: '';
+  display: block;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background-color: #b23b20;
+  margin: auto;
+  position: absolute;
+  transform: translateX(-50%);
+}
