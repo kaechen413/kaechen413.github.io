@@ -2,10 +2,10 @@
 #about {
   font-family: 'Poppins', sans-serif;
   background: #e9f3f9;
+  padding: 20px 0;
 }
 
 .about .title {
-  padding-top: 20px;
   font-family: 'Ubuntu', sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -78,6 +78,7 @@
 
 .about .about-content .right p span {
   color: #b23b20;
+  font-size: 1.5em;
 }
 
 .about .about-content .right a {

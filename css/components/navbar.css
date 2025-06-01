@@ -1,15 +1,8 @@
 .navbar-container {
   background-color: #b23b20;
-  position: fixed;
-  padding: 15px 0;
+  padding: 10px 0;
   width: 100vw;
   font-family: 'Ubuntu', sans-serif;
-}
-
-.navbar-container.sticky {
-  padding: 15px 0;
-  background-color: transparent !important;
-  box-shadow: none;
 }
 
 .navbar-container .menu li {
@@ -26,10 +19,6 @@
     transition: color 0.3s ease;
 }
 
-.navbar-container.sticky .menu li a:hover{
-    color: #b23b20;
-}
-
 .navbar-container .logo a {
     text-decoration: none;
     color: #fff;
@@ -40,10 +29,6 @@
 .navbar-container .logo a span{
     color: #fff;
     transition: all 0.3s ease;
-}
-
-.navbar-container.sticky .logo a span{
-    color: #b23b20;
 }
 
 .menu-btn {

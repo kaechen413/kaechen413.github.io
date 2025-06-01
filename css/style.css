@@ -39,7 +39,7 @@
     max-width: 100vw !important;
     width: 100vw !important;
     margin: 0 !important;
-    padding: 0 !important;
+    padding: 20px 0;
     box-sizing: border-box;
   }
   .menu-btn {
@@ -70,7 +70,7 @@
     box-sizing: border-box;
   }
 
-  .menu-btn i.active:before {
+  .menu-btn .active:before {
       content: "\f00d";
   }
   .navbar-container .menu.active {
