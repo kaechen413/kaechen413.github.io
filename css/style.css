@@ -5,6 +5,8 @@
 @import url('./components/skills.css');
 @import url('./components/orbit.css');
 @import url('./components/projects.css');
+@import url('./components/contact.css');
+@import url('./components/footer.css');
 .max-width {
     width: 100%;
     max-width: none;
@@ -69,10 +71,7 @@
     list-style: none;
     box-sizing: border-box;
   }
-
-  .menu-btn .active:before {
-      content: "\f00d";
-  }
+  
   .navbar-container .menu.active {
     left: 0;
   }
@@ -104,6 +103,12 @@
   }
   .about .about-content .right {
     width: 100%;
+  }
+
+  .experience-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
 }

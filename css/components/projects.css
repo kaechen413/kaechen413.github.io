@@ -1,6 +1,8 @@
 #projects {
   font-family: 'Poppins', sans-serif;
-  background: #fdfeff;
+  background: rgb(250, 250, 250);
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .projects .title {
@@ -25,4 +27,60 @@
   margin: auto;
   position: absolute;
   transform: translateX(-50%);
+}
+
+.projects .title::after {
+  content: 'what i made';
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: #b23b20;
+  background-color: rgb(250, 250, 250);
+  padding: 5px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.experience-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+.color-container {
+
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-btn {
+  border: 1px solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  margin-bottom: 10px;
+}
+.project-btn:hover {
+  background-color: #b23b20;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }

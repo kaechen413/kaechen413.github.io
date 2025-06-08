@@ -1,0 +1,18 @@
+footer {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #b23b20;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer span {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+}
